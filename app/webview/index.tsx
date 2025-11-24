@@ -5,7 +5,7 @@ import React from "react";
 import { StyleSheet, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { WebView } from "react-native-webview";
-import CustomTabBar from "./_components/custom-tab-bar";
+import NavigationTabBar from "./_components/navigation-tab-bar";
 
 const BROWSER_WHITELIST = ["kakao.com", "naver.com", "google.com"];
 
@@ -34,7 +34,7 @@ export default function WebViewPage() {
             return true;
           }}
         />
-        {shouldShowTabBar && <CustomTabBar />}
+        {shouldShowTabBar && <NavigationTabBar />}
       </View>
     </SafeAreaView>
   );

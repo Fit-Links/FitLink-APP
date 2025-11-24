@@ -24,7 +24,7 @@ export default function RootLayout() {
           }}
         />
         <Stack.Screen
-          name="webview/index"
+          name="webview"
           options={{
             headerShown: false,
             contentStyle: { backgroundColor: Colors.dark.background.primary },
